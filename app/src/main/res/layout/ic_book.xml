@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="0dp">
+    <com.app.cthacademy.one.custom.BookLayout
+        android:layout_width="0dp"
+        android:layout_height="360dp"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardElevation="2dp"
+                android:elevation="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="22dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0dp"
+                    app:cardElevation="2dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="18dp">
+                    <ImageView
+                        android:id="@+id/Book_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingBottom="1dp"
+                        android:src="@drawable/book_4_img"
+                        android:contentDescription="@string/book_img" />
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3.9">
+                <ImageView
+                    android:id="@+id/Book_image_text"
+                    android:layout_marginStart="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/book_4"
+                    android:contentDescription="@string/book_text"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </com.app.cthacademy.one.custom.BookLayout>
+
+</androidx.cardview.widget.CardView>

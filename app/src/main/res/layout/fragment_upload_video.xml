@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D4D8D8"
+    tools:context=".FragmentUploadVideo">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                tools:ignore="HardcodedText">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/AppHeaddingFontTextAlternativeNoAuto"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:text="Upload video Bài Học"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_notification"
+                    android:contentDescription="Notification" />
+            </RelativeLayout>
+        </LinearLayout>
+        <com.cthacademy.android.custom.SquareRelativeLayout
+            android:id="@+id/Upload_Video_BackBtn"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="start">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="50dp">
+                <ImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_back_arrow_black"
+                    android:padding="6dp"/>
+            </androidx.cardview.widget.CardView>
+        </com.cthacademy.android.custom.SquareRelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="310dp"
+            android:layout_height="106dp"
+            android:layout_marginTop="40dp"
+            app:cardUseCompatPadding="true"
+            android:elevation="20dp"
+            app:cardBackgroundColor="@android:color/darker_gray"
+            app:cardCornerRadius="12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="6dp"
+                android:background="@android:color/white"
+                android:baselineAligned="false">
+                <com.cthacademy.android.custom.SquareRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.6">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        app:cardElevation="0dp"
+                        app:cardCornerRadius="12dp">
+                        <ImageView
+                            android:id="@+id/Upload_video_thumbnail_ex"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="#D6D0D0"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="@string/video_thumbnail_1_1_ratio" />
+                        <ImageView
+                            android:id="@+id/Upload_video_lock_ex"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_lock_dark"
+                            android:padding="10dp"
+                            android:contentDescription="@string/video_lock" />
+                        <TextView
+                            android:id="@+id/Upload_video_Point_ex"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="54dp"
+                            android:textAlignment="center"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textStyle="bold"/>
+
+                    </androidx.cardview.widget.CardView>
+                </com.cthacademy.android.custom.SquareRelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1.4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Upload_video_title_ex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="@string/video_example"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/Upload_video_uploader_ex"
+                        android:text="@string/uploader"
+                        android:textSize="12sp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:maxLines="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="4dp"
+                        app:drawableStartCompat="@drawable/ic_person_dark" />
+
+                    <TextView
+                        android:id="@+id/Upload_video_description_ex"
+                        android:text="@string/description"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:maxLines="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Upload_video_uploadImageBtn"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                app:cardCornerRadius="8dp"
+                app:cardUseCompatPadding="true">
+                <ImageView
+                    android:id="@+id/Upload_video_uploadImageBtn_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_profile_upload_dark"
+                    android:padding="6dp"
+                    tools:ignore="RtlSymmetry" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Upload_video_uploadVideoBtn"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                app:cardCornerRadius="8dp"
+                app:cardUseCompatPadding="true">
+                <ImageView
+                    android:id="@+id/Upload_video_uploadVideoBtn_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_btn_play_dark"
+                    android:paddingBottom="6dp"
+                    android:paddingEnd="6dp"
+                    tools:ignore="RtlSymmetry" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Upload_video_LockBtn"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                app:cardCornerRadius="8dp"
+                app:cardUseCompatPadding="true">
+                <ImageView
+                    android:id="@+id/Upload_video_LockBtn_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_lock_dark"
+                    android:paddingTop="4dp"/>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Upload_video_Point"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:minWidth="100dp"
+                app:cardCornerRadius="8dp"
+                app:cardUseCompatPadding="true"
+                android:background="@color/white">
+                <EditText
+                    android:id="@+id/Upload_video_Point_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Số điểm"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    style="@style/AppHeaddingFontTextAlternative"
+                    android:gravity="start|center_vertical"
+                    android:minHeight="100dp"
+                    android:paddingStart="10dp"
+                    android:background="@android:color/transparent"
+                    tools:ignore="RtlSymmetry" />
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="8dp"
+            android:background="@color/white">
+            <EditText
+                android:id="@+id/Upload_video_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tên video"
+                style="@style/AppHeaddingFontTextAlternative"
+                android:gravity="start"
+                android:paddingStart="10dp"
+                android:background="@android:color/transparent"
+                tools:ignore="RtlSymmetry" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="8dp"
+            android:background="@color/white">
+            <EditText
+                android:id="@+id/Upload_video_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nội dung"
+                style="@style/AppHeaddingFontTextAlternative"
+                android:gravity="start"
+                android:minHeight="100dp"
+                android:paddingStart="10dp"
+                android:background="@android:color/transparent"
+                tools:ignore="RtlSymmetry" />
+        </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/Upload_video_Finish"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        style="@style/AppHeaddingFontTextAlternative"
+        android:background="@drawable/round_corner_white"
+        android:text="Lưu"/>
+    </LinearLayout>
+
+
+</FrameLayout>

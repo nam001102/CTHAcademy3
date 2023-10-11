@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemCardViewBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="50dp">
+    <com.cthacademy.android.custom.SquareRelativeLayout
+        android:id="@+id/itemSquareRelativeViewBtn"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/itemImageViewBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_search"/>
+    </com.cthacademy.android.custom.SquareRelativeLayout>
+</androidx.cardview.widget.CardView>

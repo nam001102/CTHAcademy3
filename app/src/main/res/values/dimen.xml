@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pin_code_input_text_size">24sp</dimen>
+    <dimen name="pin_code_input_padding">16dp</dimen>
+    <dimen name="size_point5dp">0.5dp</dimen>
+    <dimen name="corner_radius">24dp</dimen>
+    <dimen name="vertical_spacing">14dp</dimen>
+    <dimen name="vertical_spacing_small">6dp</dimen>
+    <dimen name="horizontal_spacing">24dp</dimen>
+    <dimen name="horizontal_spacing_small">14dp</dimen>
+    <dimen name="horizontal_spacing_ExtraSmall">1dp</dimen>
+    <dimen name="glow_size">10dp</dimen>
+    <dimen name="round_corner_radius">100dp</dimen>
+
+</resources>

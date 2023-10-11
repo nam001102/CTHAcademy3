@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="left"
+        android:right="36dp"
+        android:drawable="@drawable/number6"/>
+    <item android:gravity="right"
+        android:drawable="@drawable/number2"/>
+</layer-list>

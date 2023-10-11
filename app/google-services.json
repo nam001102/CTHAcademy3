@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "778370300436",
+    "firebase_url": "https://coach-numenology-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "coach-numenology",
+    "storage_bucket": "coach-numenology.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778370300436:android:b1b2fb8aa3fd1fa5d08501",
+        "android_client_info": {
+          "package_name": "com.app.coachnumenology.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778370300436-30ra3k1g3gpf50rbkcqaklctgg3atmt8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.coachnumenology.android",
+            "certificate_hash": "edd9c76a801637e7fbbf096cce56a42da1f1a39c"
+          }
+        },
+        {
+          "client_id": "778370300436-al3cid122gm9ssuq1bri0g64e8j3vmun.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.coachnumenology.android",
+            "certificate_hash": "3b9b0b72f2a3d83e7e6a0cf11a5597d0efc3a749"
+          }
+        },
+        {
+          "client_id": "778370300436-efkkdpro54dhcof2e2onbj4d1a41luof.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4KWc66ETIXElh8Pri1az46NXbCrMAj64"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778370300436-efkkdpro54dhcof2e2onbj4d1a41luof.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778370300436:android:6adff180f1511fbad08501",
+        "android_client_info": {
+          "package_name": "com.app.cthacademy.one"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778370300436-efkkdpro54dhcof2e2onbj4d1a41luof.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4KWc66ETIXElh8Pri1az46NXbCrMAj64"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778370300436-efkkdpro54dhcof2e2onbj4d1a41luof.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778370300436:android:3c26adfade2b6d00d08501",
+        "android_client_info": {
+          "package_name": "com.cthacademy.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778370300436-efkkdpro54dhcof2e2onbj4d1a41luof.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4KWc66ETIXElh8Pri1az46NXbCrMAj64"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778370300436-efkkdpro54dhcof2e2onbj4d1a41luof.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

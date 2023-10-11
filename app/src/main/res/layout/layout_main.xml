@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#01081E"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/Main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <nl.joery.animatedbottombar.AnimatedBottomBar
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            style="@style/AppHeaddingFontTextAlternative"
+            app:abb_tabColor="#FFFFFF"
+            app:abb_tabColorSelected="#FFFFFF"
+            app:abb_tabColorDisabled="#FFFFFF"
+            app:abb_indicatorColor="#FFFFFF"
+            app:abb_indicatorHeight="4dp"
+            app:abb_indicatorMargin="30dp"
+            app:abb_indicatorAppearance="round"
+            app:abb_indicatorLocation="bottom"
+            app:abb_badgeAnimation="fade"
+            app:abb_tabs="@menu/bottom_navigation_menu"/>
+<!--        <View-->
+<!--            android:id="@+id/movingLine"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_height="3dp"-->
+<!--            android:layout_marginTop="50dp"-->
+<!--            android:background="@android:color/white"-->
+<!--            android:visibility="visible"-->
+<!--            tools:visibility="visible" />-->
+
+
+    </RelativeLayout>
+
+</LinearLayout>

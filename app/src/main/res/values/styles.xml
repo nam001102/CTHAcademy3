@@ -1,0 +1,41 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:textViewStyle">@style/RobotoFont</item>
+    </style>
+
+    <style name="RobotoFont" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <color name="blue">#093472</color>
+
+    <style name="ClickableView">
+        <item name="colorControlHighlight">@android:color/darker_gray</item>
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+    </style>
+
+    <color name="ucrop_color_toolbar">@color/teal_500</color>
+    <color name="ucrop_color_statusbar">@color/teal_700</color>
+    <color name="ucrop_color_widget_active">@color/teal_500</color>
+
+    <style name="AppHeaddingFontText">
+        <item name="android:fontFamily">@font/svnnormal</item>
+        <item name="android:autoSizeTextType">uniform</item>
+    </style>
+    <style name="AppHeaddingFontTextAlternative">
+        <item name="android:fontFamily">@font/iphonemedium</item>
+        <item name="android:autoSizeTextType">uniform</item>
+    </style>
+    <style name="AppHeaddingFontTextAlternativeNoAuto">
+        <item name="android:fontFamily">@font/iphonemedium</item>
+    </style>
+    <style name="AppBodyFontText">
+        <item name="android:fontFamily">@font/segoeui</item>
+        <item name="android:autoSizeTextType">uniform</item>
+    </style>
+
+</resources>

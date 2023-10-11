@@ -1,0 +1,6 @@
+{
+    "target": "CthCheckin",
+    "package": "com.cthacademy.android.cthcheckin",
+    "generateImplementation": true,
+    "generatePreviews": true
+}

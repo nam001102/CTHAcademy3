@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_weight="1"
+        android:inputType="numberPassword"
+        android:maxLength="1"
+        android:textAlignment="center"
+        android:textSize="@dimen/pin_code_input_text_size"
+        android:textColor="@color/pin_code_input_text"
+        android:background="@drawable/round_corner_white"
+        android:padding="@dimen/pin_code_input_padding" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="13dp"
+        android:layout_weight="1"
+        android:inputType="numberPassword"
+        android:maxLength="1"
+        android:textAlignment="center"
+        android:textSize="@dimen/pin_code_input_text_size"
+        android:textColor="@color/pin_code_input_text"
+        android:background="@drawable/round_corner_white"
+        android:padding="@dimen/pin_code_input_padding"  />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="13dp"
+        android:layout_weight="1"
+        android:inputType="numberPassword"
+        android:maxLength="1"
+        android:textAlignment="center"
+        android:textSize="@dimen/pin_code_input_text_size"
+        android:textColor="@color/pin_code_input_text"
+        android:background="@drawable/round_corner_white"
+        android:padding="@dimen/pin_code_input_padding" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="13dp"
+        android:layout_weight="1"
+        android:inputType="numberPassword"
+        android:maxLength="1"
+        android:textAlignment="center"
+        android:textSize="@dimen/pin_code_input_text_size"
+        android:textColor="@color/pin_code_input_text"
+        android:background="@drawable/round_corner_white"
+        android:padding="@dimen/pin_code_input_padding" />
+
+</LinearLayout>

@@ -1,0 +1,128 @@
+{
+  "name": "cth_card",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "Umrqkx1sQM84aZOL0UWUO7",
+    "node": "191:22",
+    "version": "4314860730",
+    "component-id": "3e614022c16dfe5e346e30ffc680f66a92166bbd"
+  },
+  "default": "cth card",
+  "documentation": "hey",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "Group 1564"
+      },
+      {
+        "type": "group",
+        "id": "Group 1562"
+      },
+      {
+        "type": "image",
+        "id": "Group 1561 1"
+      },
+      {
+        "type": "text",
+        "id": "Nguyễn Ngọc Linh Chi"
+      }
+    ],
+    "modes": {
+      "cth card": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Group 1564"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Group 1564",
+            "is-structured": "false",
+            "children": [
+              "Group 1562"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Group 1562",
+            "is-structured": "false",
+            "children": [
+              "Group 1561 1",
+              "Nguyễn Ngọc Linh Chi"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Group 1561 1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "image-content": "group_1561_1.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Nguyễn Ngọc Linh Chi",
+            "margin": {
+              "left": "15.0",
+              "top": "89.0",
+              "right": "133.0",
+              "bottom": "59.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "194.11764705882354",
+              "saturation": "0.4927536231884057",
+              "value": "0.27058823529411763"
+            },
+            "text-content": "Nguyễn Ngọc Linh Chi",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "18.0",
+            "line-height": "1.6020000245836044",
+            "typeface": "Baloo 2"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "cth card",
+      "size": {
+        "width": 326.0,
+        "height": 187.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

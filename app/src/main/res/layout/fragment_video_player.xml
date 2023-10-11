@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D4D8D8"
+    app:layoutDescription="@xml/fragment_video_player_scene"
+    tools:context=".FragmentVideoPlayer">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/player_view_landscape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="200dp"
+        app:controller_layout_id="@layout/custom_video_controller"
+        app:layout_constraintBottom_toTopOf="@+id/video_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/video_title"
+        style="@style/AppHeaddingFontTextAlternative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="#C1C5C5"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/video_uploader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player_view_landscape" />
+
+    <LinearLayout
+        android:id="@+id/video_uploader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/video_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/video_title"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/video_uploader_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:riv_border_color="@color/black"
+            app:riv_border_width="1dp"
+            app:riv_corner_radius="100dp" />
+
+        <TextView
+            android:id="@+id/video_uploader_name"
+            style="@style/AppHeaddingFontTextAlternative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/video_description"
+        style="@style/AppHeaddingFontTextAlternative"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:minHeight="400dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/video_uploader" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

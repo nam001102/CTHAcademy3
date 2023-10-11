@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentStats">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D4D8D8"
+        android:orientation="horizontal">
+
+        <!-- Left nav -->
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:background="#C1C5C5"
+            android:orientation="vertical">
+
+            <com.cthacademy.android.custom.SquareRelativeLayout
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="14dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="50dp">
+                    <ImageView
+                        android:id="@+id/BackBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_back_arrow_black"
+                        android:padding="6dp"/>
+                </androidx.cardview.widget.CardView>
+            </com.cthacademy.android.custom.SquareRelativeLayout>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/itemCardViewBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="50dp">
+                <com.cthacademy.android.custom.SquareRelativeLayout
+                    android:id="@+id/itemSquareRelativeViewBtn"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content">
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/Stats_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:riv_border_color="@color/white"
+                        app:riv_border_width="1dp"
+                        android:scaleType="centerCrop"/>
+                </com.cthacademy.android.custom.SquareRelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/Stats_stats"
+                android:scrollbars="none"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="vertical">
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_notification"
+
+                android:contentDescription="Notification" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/Stats_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        style="@style/AppHeaddingFontTextAlternativeNoAuto"
+                        android:textAlignment="textStart"
+                        android:textSize="20sp"
+                        android:layout_weight="1"/>
+                    <com.cthacademy.android.custom.SquareRelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp">
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="#E0E8F3"
+                            android:layout_gravity="center_vertical"
+                            android:padding="2dp"
+                            app:riv_corner_radius="8dp"
+                            app:riv_border_width="1dp"
+                            app:riv_border_color="@color/white" />
+                        <ImageView
+                            android:id="@+id/Stats_speaker"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_speaker"
+                            android:padding="8dp"/>
+                    </com.cthacademy.android.custom.SquareRelativeLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/Stats_Life_item"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+                <com.cthacademy.android.custom.SquareRelativeLayout
+                    android:id="@+id/Stats_image_1"
+                    android:visibility="gone"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/Stats_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp">
+                <TextView
+                    android:id="@+id/Stats_data"
+                    android:scrollbars="vertical"
+                    android:justificationMode="inter_word"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

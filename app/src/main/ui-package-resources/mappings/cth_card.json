@@ -1,0 +1,6 @@
+{
+    "target": "CthCard",
+    "package": "com.cthacademy.android.cthcard",
+    "generateImplementation": true,
+    "generatePreviews": true
+}

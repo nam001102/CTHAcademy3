@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:animateLayoutChanges="true"
+    tools:context=".FragmentLessonVideos">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D4D8D8"
+        android:orientation="horizontal">
+
+        <!-- Left nav -->
+        <LinearLayout
+            android:id="@+id/lesson_video_drawer"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:background="#C1C5C5"
+            android:orientation="vertical">
+
+            <com.cthacademy.android.custom.SquareRelativeLayout
+                android:id="@+id/BackBtn"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="14dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="50dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_back_arrow_black"
+                        android:padding="6dp"/>
+                </androidx.cardview.widget.CardView>
+            </com.cthacademy.android.custom.SquareRelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lesson_video_drawerRecyclerView"
+                android:scrollbars="vertical"
+                android:layout_marginTop="46dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="vertical">
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                tools:ignore="HardcodedText">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/AppHeaddingFontTextAlternativeNoAuto"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:text="Video Bài Học Số Thiếu"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_notification"
+                    android:contentDescription="Notification" />
+            </RelativeLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="14dp"/>
+            <RelativeLayout
+                android:id="@+id/Video_Admin_Tool"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <LinearLayout
+                    android:id="@+id/Admin_Video_Tool"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Video_edit"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:cardElevation="2dp"
+                        android:elevation="4dp"
+                        app:cardCornerRadius="4dp"
+                        android:padding="1dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@android:color/transparent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_setting_dark"
+                            android:padding="2dp"/>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Video_delete"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:cardElevation="2dp"
+                        android:elevation="4dp"
+                        app:cardCornerRadius="4dp"
+                        android:padding="1dp"
+                        android:layout_marginEnd="4dp"
+                        android:background="@android:color/transparent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_profile_cancel_dark"
+                            android:padding="4dp"/>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_alignParentEnd="true">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Video_Admin_Number_Container"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="14dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_marginEnd="10dp"
+                        app:cardCornerRadius="50dp">
+                        <EditText
+                            android:id="@+id/Video_Admin_Number"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="0"
+                            android:maxLength="1"
+                            android:inputType="numberDecimal"
+                            android:imeOptions="actionDone"
+                            android:background="@android:color/transparent"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"/>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Video_upload"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:cardElevation="2dp"
+                        android:elevation="4dp"
+                        app:cardCornerRadius="4dp"
+                        android:padding="1dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@android:color/transparent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_profile_upload_dark"
+                            android:padding="4dp"/>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="14dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lesson_video_drawerRecyclerView_video"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Video_Search_Container"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="19.2dp"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="0dp"
+        android:layout_marginTop="64dp">
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/Video_Search_Btn"
+            android:imeOptions="actionSearch"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- MotionLayout -->
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/motionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:layoutDescription="@xml/fragment_lesson_videos_scene">
+
+        <!-- Rest of your MotionLayout content -->
+        <Space
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:alpha="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#D4D8D8"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_container">
+
+            <TextView
+                android:id="@+id/video_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginBottom="4dp"
+                android:background="#C1C5C5"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/video_uploader"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/player_view_landscape" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/video_description"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video_title"
+                app:layout_constraintVertical_bias="0.0">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/video_uploader_avatar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:riv_border_color="@color/black"
+                    app:riv_border_width="1dp"
+                    app:riv_corner_radius="100dp" />
+
+                <TextView
+                    android:id="@+id/video_uploader_name"
+                    style="@style/AppHeaddingFontTextAlternative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/video_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="4dp"
+                android:minHeight="400dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video_uploader" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#D4D8D8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <FrameLayout
+            android:id="@+id/main_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/main_container"
+            app:layout_constraintStart_toStartOf="@id/main_container"
+            app:layout_constraintTop_toTopOf="@id/main_container">
+
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/main_player"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:controller_layout_id="@layout/custom_video_controller" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/close_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:alpha="0"
+            app:layout_constraintBottom_toBottomOf="@id/main_container"
+            app:layout_constraintEnd_toEndOf="@id/main_container"
+            app:layout_constraintTop_toTopOf="@id/main_container"
+            app:srcCompat="@drawable/ic_baseline_close_24" />
+
+        <ImageView
+            android:id="@+id/play_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:alpha="0"
+            app:layout_constraintBottom_toBottomOf="@+id/close_imageView"
+            app:layout_constraintEnd_toStartOf="@+id/close_imageView"
+            app:layout_constraintTop_toTopOf="@+id/close_imageView"
+            app:srcCompat="@drawable/ic_baseline_play_arrow_24" />
+
+        <TextView
+            android:id="@+id/title_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="12dp"
+            android:alpha="0"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="This is very very very very long title"
+            app:layout_constraintBottom_toBottomOf="@+id/play_imageView"
+            app:layout_constraintEnd_toStartOf="@+id/play_imageView"
+            app:layout_constraintStart_toEndOf="@+id/main_imageView"
+            app:layout_constraintTop_toTopOf="@+id/play_imageView" />
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="ring">
+        <solid android:color="#D3D3D3" /> <!-- Progress bar background color -->
+        <size android:width="10dp" /> <!-- Thickness of the progress bar -->
+        <gradient
+            android:type="sweep"
+            android:useLevel="false"
+            android:startColor="#FF4081" android:endColor="#FF4081"/>
+    </shape>
+</selector>

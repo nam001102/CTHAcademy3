@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LoginRevievedFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/DalTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="Chúng tôi đã gửi mã xác nhận đến số điện thoại 098 7xx xx78"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/ErrorTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red_900"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:id="@+id/codeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <com.app.cthacademy.one.custom.SquareRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/digit1"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="13dp"
+                        android:layout_weight="1"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:background="@drawable/round_corner_white_border"
+                        android:textAlignment="center" />
+                </com.app.cthacademy.one.custom.SquareRelativeLayout>
+
+                <com.app.cthacademy.one.custom.SquareRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/digit2"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="13dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/samsungbold"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:background="@drawable/round_corner_white_border"
+                        android:textAlignment="center" />
+                </com.app.cthacademy.one.custom.SquareRelativeLayout>
+
+                <com.app.cthacademy.one.custom.SquareRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/digit3"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="13dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/samsungbold"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:background="@drawable/round_corner_white_border"
+                        android:textAlignment="center" />
+                </com.app.cthacademy.one.custom.SquareRelativeLayout>
+
+                <com.app.cthacademy.one.custom.SquareRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/digit4"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/samsungbold"
+                        android:inputType="phone"
+                        android:imeOptions="actionDone"
+                        android:layout_marginEnd="13dp"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:background="@drawable/round_corner_white_border"
+                        android:textAlignment="center" />
+                </com.app.cthacademy.one.custom.SquareRelativeLayout>
+
+                <com.app.cthacademy.one.custom.SquareRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/digit5"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="13dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/samsungbold"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:background="@drawable/round_corner_white_border"
+                        android:textAlignment="center" />
+                </com.app.cthacademy.one.custom.SquareRelativeLayout>
+
+                <com.app.cthacademy.one.custom.SquareRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/digit6"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/samsungbold"
+                        android:inputType="phone"
+                        android:imeOptions="actionDone"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:background="@drawable/round_corner_white_border"
+                        android:textAlignment="center" />
+                </com.app.cthacademy.one.custom.SquareRelativeLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/resendbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/segoeui"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/black"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:paddingHorizontal="8dp"
+                android:text="Gửi lại mã" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="26dp">
+                    <Button
+                        android:id="@+id/loginbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center"
+                        android:background="#01081E"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:textSize="20sp"
+                        android:paddingHorizontal="8dp"
+                        android:text="@string/ng_nh_p" />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/Loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:clickable="true">
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/LoadingIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminate="true"
+            app:indicatorColor="@color/black"/>
+    </RelativeLayout>
+
+</FrameLayout>
+

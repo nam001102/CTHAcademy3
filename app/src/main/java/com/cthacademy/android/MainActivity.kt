@@ -47,8 +47,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var statsIdArray : List<String>
     private fun checkForUpdate(){
         val appUpdater = AppUpdater(this)
-            .setUpdateFrom(UpdateFrom.GITHUB)
-            .setGitHubUserAndRepo("javiersantos", "AppUpdater")
+            .setUpdateFrom(UpdateFrom.XML)
+            .setUpdateXML("https://raw.githubusercontent.com/javiersantos/AppUpdater/master/app/update.xml")
             .setTitleOnUpdateAvailable("Có bản cập nhật mới.")
             .setContentOnUpdateAvailable("Xin vui lòng cập nhật lên bản mới nhất để có được những trải nghiệm tốt nhất!")
             .setButtonUpdate("Cập nhật")
